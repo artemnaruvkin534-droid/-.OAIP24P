@@ -1,0 +1,55 @@
+{
+  "clients": {
+    "1": {
+      "id": 1,
+      "name": "Анна",
+      "created": "2026-02-09 14:49:59",
+      "sketch_url": "anna_flower.jpg",
+      "phone": "+79161234567"
+    },
+    "2": {
+      "id": 2,
+      "name": "Дмитрий",
+      "created": "2026-02-09 14:49:59",
+      "appointment": "2026-02-18",
+      "master": "Иван",
+      "phone": "+79262345678",
+      "notes": "Хочет рукав, темная тематика",
+      "prepayment": 5000,
+      "updated": "2026-02-09 14:49:59"
+    },
+    "3": {
+      "id": 3,
+      "name": "Мария",
+      "created": "2026-02-09 14:49:59",
+      "allergies": [
+        "latex",
+        "red_ink"
+      ],
+      "emergency_contact": "+79991234567",
+      "phone": "+79373456789",
+      "medical_notes": "Склонность к келоидам"
+    },
+    "4": {
+      "id": 4,
+      "name": "Алексей",
+      "created": "2026-02-09 14:49:59",
+      "appointment": "2026-03-10",
+      "master": "Светлана",
+      "sketch_url": "dragon_sketch.png",
+      "price": 15000
+    },
+    "5": {
+      "id": 5,
+      "name": "Ольга",
+      "created": "2026-02-09 14:49:59",
+      "appointment": "2026-02-20",
+      "master": "Иван",
+      "allergies": [
+        "antibiotics"
+      ],
+      "notes": "Первая татуировка, немного волнуется"
+    }
+  },
+  "last_id": 5
+}
