@@ -1,0 +1,15 @@
+{% if operation == ':' and num2 == 0 %}
+    Ошибка
+{% elif operation == '+' %}
+    {{ num1 + num2 }}
+{% elif operation == '-' %}
+    {{ num1 - num2 }}
+{% elif operation == '*' %}
+    {{ num1 * num2 }}
+{% elif operation == ':' %}
+    {{ num1 / num2 }}
+{% elif operation == '**' %}
+    {{ num1 ** num2 }}
+{% else %}
+    Ошибка
+{% endif %}
