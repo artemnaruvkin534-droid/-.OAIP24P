@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Статистика материалов</h1>
+
+<div class="stats-container">
+    <div class="stat-card">
+        <h3>Общая статистика</h3>
+        <p><strong>Всего материалов:</strong> {{ total_materials }}</p>
+    </div>
+    
+    <div class="stat-card">
+        <h3>Распределение по категориям</h3>
+        <ul>
+            {% for category, count in categories.items() %}
+                <li><strong>{{ category }}:</strong> {{ count }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+    
+    <div class="stat-card">
+        <h3>Распределение по авторам</h3>
+        <ul>
+            {% for author, count in authors.items() %}
+                <li><strong>{{ author }}:</strong> {{ count }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>
+{% endblock %}

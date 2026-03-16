@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Добавить новый материал</h1>
+
+<form method="POST">
+    <div>
+        <label for="title">Название:</label><br>
+        <input type="text" id="title" name="title" required>
+    </div>
+    
+    <div>
+        <label for="category">Категория:</label><br>
+        <input type="text" id="category" name="category" required>
+    </div>
+    
+    <div>
+        <label for="author">Автор:</label><br>
+        <input type="text" id="author" name="author" required>
+    </div>
+    
+    <div>
+        <label for="description">Описание:</label><br>
+        <textarea id="description" name="description" rows="4" required></textarea>
+    </div>
+    
+    <div>
+        <input type="submit" value="Добавить материал">
+    </div>
+</form>
+{% endblock %}

@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Список материалов</h1>
+
+{% if materials %}
+    {% for material in materials %}
+        <div style="border: 1px solid #ccc; margin: 10px; padding: 10px;">
+            <h2>{{ material.title }}</h2>
+            <p><strong>Автор:</strong> {{ material.author }}</p>
+            <p><strong>Категория:</strong> {{ material.category }}</p>
+            <a href="{{ url_for('material_detail', material_id=material.id) }}">Подробнее</a>
+        </div>
+    {% endfor %}
+{% else %}
+    <p>Нет материалов для отображения</p>
+{% endif %}
+{% endblock %}
