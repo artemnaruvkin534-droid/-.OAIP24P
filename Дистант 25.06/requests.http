@@ -1,0 +1,27 @@
+### Получить все задачи
+GET http://127.0.0.1:5000/tasks
+
+### Создать задачу
+POST http://127.0.0.1:5000/tasks
+Content-Type: application/json
+
+{
+  "title": "Изучить PyCharm"
+}
+
+### Получить задачу по id
+GET http://127.0.0.1:5000/tasks/1
+
+### Обновить задачу
+PUT http://127.0.0.1:5000/tasks/1
+Content-Type: application/json
+
+{
+  "done": 1
+}
+
+### Удалить задачу
+DELETE http://127.0.0.1:5000/tasks/1
+
+### Фильтр по done (доп. задание)
+GET http://127.0.0.1:5000/tasks?done=1
