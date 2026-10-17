@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Генератор приветствия</title>
+</head>
+<body>
+
+<h1>Генератор приветствия</h1>
+
+<form action="/result" method="POST">
+
+    <label>Введите имя:</label>
+    <input type="text" name="username" required>
+
+    <br><br>
+
+    <label>Выберите настроение:</label>
+    <select name="mood">
+        <option value="good">Хорошее</option>
+        <option value="normal">Обычное</option>
+        <option value="bad">Плохое</option>
+    </select>
+
+    <br><br>
+
+    <!-- Самостоятельная часть: любимый язык программирования -->
+    <label>Любимый язык программирования:</label>
+    <select name="language">
+        <option value="Python">Python</option>
+        <option value="JavaScript">JavaScript</option>
+        <option value="C#">C#</option>
+        <option value="Java">Java</option>
+    </select>
+
+    <br><br>
+
+    <!-- Задание со звёздочкой: возраст -->
+    <label>Введите возраст:</label>
+    <input type="number" name="age" min="1" max="120" required>
+
+    <br><br>
+
+    <button type="submit">Получить сообщение</button>
+
+</form>
+
+</body>
+</html>
